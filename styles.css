@@ -1,0 +1,157 @@
+/* background color */
+body {
+background-color: linen;
+padding: 10px;
+    }
+
+
+/* Heading 1 color font*/
+h1 {
+text-align: center;     /*Text align property*/
+color: rgb(128, 0, 0);
+font-family: "Jersey 25", sans-serif;       /*Using Google Font Jersey 25*/
+font-size: 200%;
+font-style: normal;
+border-style: solid;
+border-color: lavender;
+border-width: 2px;
+border-radius: 10px;
+padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 30px;
+padding-left: 40px;
+margin: auto
+    }
+
+/*Changing the font with multiple fallbacks*/
+p {
+font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+color: hsl(3,3,3);
+font-size: 1em;
+    }
+
+/*Height and width of img using 2 unique units*/
+img {
+    width: 200px; 
+    height: 2in;
+    border: 2px solid #000;
+    padding: 10px 20px 30px 40px;
+    margin: 10px, 20px, 30px, 40px;
+    position: static;
+}
+
+img:active {
+    transform: scale(1.1)
+}
+
+/*Text decorations*/
+h2 {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    border: 2px solid #000;
+    text-decoration: underline;
+    color: #000;
+}
+
+h2:hover {
+    color:violet;
+}
+
+/*min-width and min-height*/
+video {
+    max-width: 10cm;
+    min-width: 10vw;
+    position: relative;
+    top: 50;
+    right: 100;
+}
+
+h3 {
+    color: color-mix(in lch, plum, pink);
+    display: block;
+}
+
+div {
+    display: inline-block
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+.grid-item {
+    display: grid;
+    grid-template-columns: 200px [col-start] 200px [col-start] 200px [col-start];    grid-template-rows: 100px 200px; /* Define two rows */
+    grid-template-rows: auto;   
+    grid-area: content;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+      font-size: 20%;
+    }
+
+    img {
+        width: 20px; 
+        height: 20px
+    }
+  }
+
+   #Attendees {
+    color:rgb(210, 210, 20)
+   }
+
+   * {
+    margin: 0;
+    padding: 0;
+  }
+
+  [type="text"] {
+    font-size: 120%;
+
+  }
+
+ audio, video {
+    width: 500px;
+
+  }
+
+  ul > li {
+    color:blue;
+  }
+
+    summary a {
+    color:aqua;
+    font-style: italic;
+  }
+
+  h2 ~ p {
+    font-size: 80%;
+  }
+
+  input + span {
+    font-size: 300%
+
+  }
+
+  p.example{
+    border: 2px solid #000;
+  }
+
+  h1:has(+ p) {
+    margin-bottom: 0;
+  }
+
+
+ol {
+    font-size: 30px;
+
+    li {
+        font-size: 15px;
+    }
+  }
